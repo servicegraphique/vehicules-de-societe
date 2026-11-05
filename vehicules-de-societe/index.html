@@ -79,8 +79,10 @@ src="https://www.facebook.com/tr?id=2555334021252967&ev=PageView&noscript=1"
                   <input type="hidden" name="question_2" value="Quel type d'utilitaire précisément ?">
                   <input type="hidden" name="question_3" value="Que type de voiture recherchez-vous?">
                   <input type="hidden" name="question_4" value="Quel type de motorisation recherchez-vous ?">
+                  <input type="hidden" name="question_5" value="Quel mode d’acquisition envisagez-vous ?">
+                  <input type="hidden" name="question_6" value="Quel budget envisagez-vous ?">
                 </div>
-                <div class="titre-vehicules-1"><span>Afin de recevoir des offres sur mesure merci de répondre à ces 6 questions.<br> <br>‍<strong>Quel type de véhicule recherchez-vous ?</strong></span></div>
+                <div class="titre-vehicules-1"><span>Afin de recevoir des offres sur mesure, merci de répondre aux questions suivantes.<br> <br>‍<strong>Quel type de véhicule recherchez-vous ?</strong></span></div>
                 <div class="titre-2-vehicules title-car">Vous recevrez par la suite les meilleures offres des concessionnaires sélectionnés pour vous !<br></div>
                 <div class="radio-block-custom-1 vehicule-form"><label class="picto-vehicule-1 w-radio">
                     <div class="w-form-formradioinput w-form-formradioinput--inputType-custom style-radio-vehicule style-radio-vehicule-5 car-lp w-radio-input"></div><input name="reponse_1" data-name="reponse_1" data-radio-delay="30" data-radio-skip="true" type="radio" id="Utilitaire-du-3-au-20m3" data-go-to="step-2" required="" style="opacity:0;position:absolute;z-index:-1" value="Utilitaire du 3 au 20m3"><span class="titre-1-voiture-professionnel w-form-label" for="Utilitaire-du-3-au-20m3">Utilitaire du 3 au 20m3</span>
@@ -129,9 +131,34 @@ src="https://www.facebook.com/tr?id=2555334021252967&ev=PageView&noscript=1"
               </div>
             </div>
             <div data-form="step" class="etape-2 vehicule-form-2 hide-car">
-              <div data-go-to="etape-mail" data-answer="step-4" class="etape-content form-blobale">
+              <div data-go-to="acquisition" data-answer="step-4" class="etape-content form-blobale">
                 <div class="titre-assurance-iard titre-vehicules-1">Quel type de motorisation recherchez-vous ?</div>
                 <div class="content-vehicule-form-1"><label class="radio-btn iard-mobile w-radio"><input class="w-form-formradioinput w-radio-input" name="reponse_4" data-name="reponse_4" data-radio-delay="30" data-radio-skip="true" type="radio" id="Diesel-Essence" required="" value="Diesel / Essence"><span class="radio-button-label-36 w-form-label" for="Diesel-Essence">Diesel / Essence</span></label><label class="radio-btn iard-mobile w-radio"><input type="radio" name="reponse_4" id="lectrique" data-name="reponse_4" class="w-form-formradioinput w-radio-input" value="Électrique"><span class="radio-button-label-36 w-form-label" for="lectrique">Électrique</span></label><label class="radio-btn iard-mobile w-radio"><input type="radio" name="reponse_4" id="Hybride" data-name="reponse_4" class="w-form-formradioinput w-radio-input" value="Hybride"><span class="radio-button-label-36 w-form-label" for="Hybride">Hybride</span></label></div>
+                <div class="etape-bouton assurance-iard">
+                  <a data-form="back-btn" href="#" class="bouton-precedent rc-pro car-button w-button">Précédent</a>
+                  <a data-form="next-btn" href="#" class="bouton-suivant rc-pro car-button w-button">Suivant</a>
+                </div>
+              </div>
+            </div>
+            <div data-form="step" class="etape-2 form-blobale vehicule-form-2 hide-car">
+              <div data-go-to="etape-mail" data-answer="acquisition" class="etape-content form-blobale">
+                <fieldset class="acquisition-options">
+                  <legend class="titre-assurance-iard titre-vehicules-1">Quel mode d’acquisition envisagez-vous ?</legend>
+                  <label class="radio-btn iard-mobile w-radio"><input type="radio" name="reponse_5" value="Achat comptant" required class="w-form-formradioinput w-radio-input"><span class="radio-button-label-36 w-form-label">Achat comptant</span></label>
+                  <label class="radio-btn iard-mobile w-radio"><input type="radio" name="reponse_5" value="Crédit classique" class="w-form-formradioinput w-radio-input"><span class="radio-button-label-36 w-form-label">Crédit classique</span></label>
+                  <label class="radio-btn iard-mobile w-radio"><input type="radio" name="reponse_5" value="Location longue durée" class="w-form-formradioinput w-radio-input"><span class="radio-button-label-36 w-form-label">Location longue durée</span></label>
+                </fieldset>
+                <fieldset class="acquisition-options budget-options" id="budget-location" hidden disabled>
+                  <legend class="titre-assurance-iard titre-vehicules-1">Quel budget envisagez-vous ?</legend>
+                  <label class="radio-btn iard-mobile w-radio"><input type="radio" name="reponse_6" value="150 € – 199 €" class="w-form-formradioinput w-radio-input"><span class="radio-button-label-36 w-form-label">150 € – 199 €</span></label>
+                  <label class="radio-btn iard-mobile w-radio"><input type="radio" name="reponse_6" value="200 € – 299 €" class="w-form-formradioinput w-radio-input"><span class="radio-button-label-36 w-form-label">200 € – 299 €</span></label>
+                  <label class="radio-btn iard-mobile w-radio"><input type="radio" name="reponse_6" value="300 € – 399 €" class="w-form-formradioinput w-radio-input"><span class="radio-button-label-36 w-form-label">300 € – 399 €</span></label>
+                  <label class="radio-btn iard-mobile w-radio"><input type="radio" name="reponse_6" value="400 € – 499 €" class="w-form-formradioinput w-radio-input"><span class="radio-button-label-36 w-form-label">400 € – 499 €</span></label>
+                  <label class="radio-btn iard-mobile w-radio"><input type="radio" name="reponse_6" value="500 € – 599 €" class="w-form-formradioinput w-radio-input"><span class="radio-button-label-36 w-form-label">500 € – 599 €</span></label>
+                  <label class="radio-btn iard-mobile w-radio"><input type="radio" name="reponse_6" value="600 € – 799 €" class="w-form-formradioinput w-radio-input"><span class="radio-button-label-36 w-form-label">600 € – 799 €</span></label>
+                  <label class="radio-btn iard-mobile w-radio"><input type="radio" name="reponse_6" value="800 € et +" class="w-form-formradioinput w-radio-input"><span class="radio-button-label-36 w-form-label">800 € et +</span></label>
+                </fieldset>
+                <p id="acquisition-erreur" class="acquisition-erreur" role="alert" hidden></p>
                 <div class="etape-bouton assurance-iard">
                   <a data-form="back-btn" href="#" class="bouton-precedent rc-pro car-button w-button">Précédent</a>
                   <a data-form="next-btn" href="#" class="bouton-suivant rc-pro car-button w-button">Suivant</a>
@@ -291,6 +318,7 @@ src="https://www.facebook.com/tr?id=2555334021252967&ev=PageView&noscript=1"
     </div>
   </div>
   <script src="script.js" defer></script>
+<script src="acquisition.js" defer></script>
 <script src="lead-handler.js" defer></script>
 <script src="verification-sms.js" defer></script>
 </body>
