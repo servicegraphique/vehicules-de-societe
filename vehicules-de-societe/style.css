@@ -2438,3 +2438,26 @@ html, body {
 overflow: auto !important;
 }
 .form-autonome { margin: 0 0 15px; }
+
+/* Questions d'acquisition et budget conditionnel */
+.acquisition-options {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+.acquisition-options legend {
+  width: 100%;
+}
+.budget-options {
+  margin-top: 20px;
+}
+.budget-options[hidden] {
+  display: none;
+}
+
+.acquisition-erreur {
+  color: #c62828;
+  font-size: 14px;
+  margin: 8px 0;
+}
